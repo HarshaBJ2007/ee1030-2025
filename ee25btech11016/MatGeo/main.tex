@@ -1,0 +1,135 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\graphicspath{{./figs/}}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{circuitikz}
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, 
+text width=4em, text centered, rounded corners, minimum height=3em]
+\tikzstyle{sum} = [draw, fill=blue!10, circle, minimum size=1cm, node distance=1.5cm]
+\tikzstyle{input} = [coordinate]
+\tikzstyle{output} = [coordinate]
+
+
+\begin{document}
+	
+	\bibliographystyle{IEEEtran}
+	\vspace{3cm}
+	
+	\title{1.5.4}
+	\author{EE25BTECH11016 - Taraka Abhinav}
+	\maketitle
+	{\let\newpage\relax\maketitle}
+	
+	\renewcommand{\thefigure}{\theenumi}
+	\renewcommand{\thetable}{\theenumi}
+	\setlength{\intextsep}{10pt} % Space between text and floats
+	
+	
+	\numberwithin{equation}{enumi}
+	\numberwithin{figure}{enumi}
+	\renewcommand{\thetable}{\theenumi}
+
+\textbf{Question:}\\
+A circle has its center at $(4,4)$. If one end of a diameter is $(4,0)$, then find the coordinates of the other end.\\
+\solution\\
+According to the question,  
+Consider the coordinates as vectors:
+
+\begin{align*}
+A &= \myvec{x\\y}, \quad B = \myvec{4\\0}, \quad C = \myvec{4\\4}
+\end{align*}
+
+The midpoint of the diameter is the center. Hence,
+\begin{align*}
+\frac{A+B}{2} &= C
+\end{align*}
+
+Multiplying both sides by $2$,
+\begin{align*}
+A + B &= 2C
+\end{align*}
+
+Substituting,
+\begin{align*}
+\myvec{x\\y} + \myvec{4\\0} &= 2\myvec{4\\4}
+\end{align*}
+
+Simplifying,
+\begin{align*}
+\myvec{x\\y} &= 2\myvec{4\\4} - \myvec{4\\0} \\
+&= \myvec{8\\8} - \myvec{4\\0} \\
+&= \myvec{4\\8}
+\end{align*}
+
+Now writing as a linear system,
+\begin{align*}
+\myvec{1 & 0\\0 & 1}\myvec{x\\y} &= \myvec{4\\8}
+\end{align*}
+
+The augmented matrix is,
+\begin{align*}
+\myvec{1 & 0 & 4\\0 & 1 & 8}
+\end{align*}
+
+Row operations give the same matrix :
+\begin{align*}
+\myvec{1 & 0 & 4\\0 & 1 & 8}
+\end{align*}
+
+Thus,
+\begin{align*}
+\operatorname{rank}\myvec{1 & 0\\0 & 1} 
+&= \operatorname{rank}\myvec{1 & 0 & 4\\0 & 1 & 8} = 2
+\end{align*}
+
+So the unique solution is
+\begin{align*}
+\myvec{x\\y} &= \myvec{4\\8}
+\end{align*}
+
+\begin{align*}
+\therefore \text{The other end of the diameter is }(4,8).
+\end{align*}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{figs/Figure_1.png}
+    \label{figure_1}
+\end{figure}
+
+\end{document}
