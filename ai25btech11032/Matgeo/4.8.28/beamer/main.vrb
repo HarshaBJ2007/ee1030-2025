@@ -1,17 +1,16 @@
 \frametitle{Code - Python only}
 \begin{lstlisting}
-ax.set_xlabel('X')
-ax.set_ylabel('Y')
-ax.set_zlabel('Z')
-ax.set_xlim(-12, 12)
-ax.set_ylim(-12, 12)
-ax.set_zlim(-8, 8)
-
-# set viewing angle so x-axis appears lateral to plane: azim  90 looks down +x direction
-ax.view_init(elev=18, azim=90)
+# Styling
+ax.set_xlabel("X")
+ax.set_ylabel("Y")
+ax.set_zlabel("Z")
+ax.set_title(f"Plane (cyan) & x-axis (red)\nPerpendicular distance = {dist:.3f}")
 ax.legend()
-ax.set_title("Plane through intersection - parallel to X-axis\n(blue plane, red line, black x-axis)")
+ax.view_init(elev=18, azim=60)
+ax.set_box_aspect([1,1,1])  # equal aspect ratio
+
 plt.tight_layout()
 plt.savefig("new_plane.png")
 plt.show()
+
 \end{lstlisting}

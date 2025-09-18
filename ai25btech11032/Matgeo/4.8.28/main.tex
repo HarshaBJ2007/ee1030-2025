@@ -26,134 +26,102 @@
 
 
 \begin{document}
-\section*{Problem 4.8.28}
-
-Find the equation of the plane passing through the intersection of the planes
+\section*{Problem Statement}
+Find the equation of the plane passing through the intersection of the planes 
 \begin{align}
-\vec{r}\cdot(\hat{\imath}+\hat{\jmath}+\hat{k}) &= 1, \\[4pt]
-\vec{r}\cdot(2\hat{\imath}+3\hat{\jmath}-\hat{k}) + 4 &= 0,
+\vec{n}_1^\top \vec{r} - c_1 = 0, 
+\qquad
+\vec{n}_2^\top \vec{r} - c_2 = 0
 \end{align}
-which is parallel to the $X$--axis. Hence, find the distance of the plane from the $X$--axis.
 
----
+which is parallel to the $x$-axis, and compute the perpendicular distance of this plane from the $x$-axis.
 
 \section*{Input Data}
-
 \begin{table}[H]
 \centering
-\begin{tabular}{|c |c|}
+\begin{tabular}{|c|c|}
 \hline
-Quantity & Value \\
+\textbf{Quantity} & \textbf{Value} \\
 \hline
-Normal of $\Pi_1$ & $\vec{n}_1=\myvec{1\\1\\1}$ \\
+$\vec{n}_1$ & $\myvec{1\\1\\1}$ \\
 \hline
-Right-hand side of $\Pi_1$ & $b_1=1$ \\
+$c_1$ & $1$ \\
 \hline
-Normal of $\Pi_2$ & $\vec{n}_2=\myvec{2\\3\\-1}$ \\
+$\vec{n}_2$ & $\myvec{2\\3\\-1}$ \\
 \hline
-Right-hand side of $\Pi_2$ & $b_2=-4$ \\
+$c_2$ & $-4$ \\
 \hline
-$X$--axis direction & $\vec{e}_1=\myvec{1\\0\\0}$ \\
+$\vec{e}_x$ & $\myvec{1\\0\\0}$ \\
 \hline
 \end{tabular}
-\caption{Input values for the problem}
+\caption{Input data for the problem}
+\label{}
 \end{table}
 
----
 
 \section*{Solution}
 
-We first find the line of intersection of the given planes.  
-Stacking the two plane equations in matrix form gives
+\textbf{Step 1. General plane through the intersection}
 \begin{align}
-\vec{A}\vec{r} &= \vec{b}, \\
-\vec{A} &= \myvec{\vec{n}_1^\top \\[4pt] \vec{n}_2^\top}
-= \myvec{1 & 1 & 1 \\[4pt] 2 & 3 & -1}, \\
-\vec{b} &= \myvec{1\\[4pt]-4}.
+\big(\vec{n}_1 + k \vec{n}_2\big)^\top \vec{r} - \big(c_1 + k c_2\big) &= 0 \\
+\vec{n}(k) &= \vec{n}_1 + k \vec{n}_2 \\
+C(k) &= c_1 + k c_2
 \end{align}
 
-The augmented matrix is reduced as follows:
+\textbf{Step 2. Condition for parallelism with $x$-axis}
 \begin{align}
-\myvec{1 & 1 & 1 & |&1 \\[4pt] 2 & 3 & -1 & |&-4}
-&\xrightarrow{R_2\leftarrow R_2-2R_1}
-\myvec{1 & 1 & 1 & |&1 \\[4pt] 0 & 1 & -3 & |&-6} \\[8pt]
-&\xrightarrow{R_1\leftarrow R_1-R_2}
-\myvec{1 & 0 & 4 & |&7 \\[4pt] 0 & 1 & -3 & |&-6}.
+\vec{e}_x^\top \vec{n}(k) &= 0 \\
+\vec{e}_x^\top \vec{n}_1 + k\, \vec{e}_x^\top \vec{n}_2 &= 0 \\
+k &= -\frac{\vec{e}_x^\top \vec{n}_1}{\vec{e}_x^\top \vec{n}_2}
 \end{align}
 
-Thus the line of intersection can be expressed as
+\textbf{Step 3. Required plane}
 \begin{align}
-\vec{r} &= \vec{r}_p + t\,\vec{d}, \\
-\vec{r}_p &= \myvec{7\\[4pt]-6\\[4pt]0}, \\
-\vec{d} &= \myvec{-4\\[4pt]3\\[4pt]1}.
+\vec{n} &= \vec{n}_1 - \frac{\vec{e}_x^\top \vec{n}_1}{\vec{e}_x^\top \vec{n}_2}\,\vec{n}_2 \\
+C &= c_1 - \frac{\vec{e}_x^\top \vec{n}_1}{\vec{e}_x^\top \vec{n}_2}\,c_2 \\
+\vec{n}^\top \vec{r} &= C
 \end{align}
 
-Next, since the required plane is parallel to the $X$--axis, its normal $\vec{n}$ must be orthogonal to $\vec{e}_1$.  
-Also, since the plane contains the intersection line, $\vec{n}$ must be orthogonal to $\vec{d}$.  
-Hence the system is
+\textbf{Step 4. Distance from the $x$-axis}
+Let a point on the $x$-axis be
 \begin{align}
-\vec{e}_1^\top \vec{n} &= 0, \\
-\vec{d}^\top \vec{n} &= 0.
+\vec{r}_0 &= t \vec{e}_x
+\end{align}
+The perpendicular distance is
+\begin{align}
+d &= \frac{\left|\vec{n}^\top \vec{r}_0 - C\right|}{\|\vec{n}\|} \\
+&= \frac{|C|}{\|\vec{n}\|}, \quad \text{since } \vec{n}^\top \vec{e}_x = 0
 \end{align}
 
-Writing this in matrix form:
+\textbf{Step 5. Substitution of values}
 \begin{align}
-\myvec{\vec{e}_1^\top \\[4pt] \vec{d}^\top}\vec{n}
-&= \myvec{1 & 0 & 0 \\[4pt]-4 & 3 & 1}\vec{n}
-= \myvec{0\\0}.
+\vec{e}_x^\top \vec{n}_1 &= 1, & \vec{e}_x^\top \vec{n}_2 &= 2 \\
+k &= -\tfrac{1}{2} \\
+\vec{n} &= \vec{n}_1 - \tfrac{1}{2}\vec{n}_2 = \myvec{0\\ -\tfrac12 \\ \tfrac32} \\
+C &= c_1 - \tfrac{1}{2} c_2 = 3
 \end{align}
 
-The augmented matrix reduces as
+Norm:
 \begin{align}
-\myvec{1 & 0 & 0 & |&0 \\[4pt]-4 & 3 & 1 & |&0}
-&\xrightarrow{R_2\leftarrow R_2+4R_1}
-\myvec{1 & 0 & 0 & |&0 \\[4pt]0 & 3 & 1 & |&0}.
+\|\vec{n}\|^2 &= \vec{n}_1^\top \vec{n}_1 
+- \vec{n}_1^\top \vec{n}_2 
++ \tfrac{1}{4}\vec{n}_2^\top \vec{n}_2 \\
+&= 3 - 4 + \tfrac{1}{4}(14) = \tfrac{5}{2} \\
+\|\vec{n}\| &= \tfrac{\sqrt{10}}{2}
 \end{align}
 
-From this we conclude
+\textbf{Final Results}
 \begin{align}
-n_x &= 0, \\
-3n_y + n_z &= 0.
-\end{align}
-
-Choosing a convenient scale, we may take
-\begin{align}
-\vec{n} &= \myvec{0\\[4pt]-1\\[4pt]3}.
-\end{align}
-
-Now the constant term of the plane is obtained by substituting a point $\vec{r}_p$ on the line:
-\begin{align}
-c &= \vec{n}^\top \vec{r}_p, \\
-c &= \myvec{0 & -1 & 3}\myvec{7\\[4pt]-6\\[4pt]0}, \\
-c &= 6.
-\end{align}
-
-Therefore, the equation of the required plane is
-\begin{align}
-\vec{n}^\top\vec{r} - c &= 0, \\
-\vec{n}^\top\vec{r} - 6 &= 0.
-\end{align}
-
-Finally, the distance of this plane from the $X$--axis is
-\begin{align}
-d &= \frac{|c|}{\|\vec{n}\|}, \\
-d &= \frac{6}{\sqrt{\vec{n}^\top\vec{n}}}, \\
-d &= \frac{6}{\sqrt{10}}.
-\end{align}
-
----
-
-\section*{Final Answer}
-
-\begin{align}
-\boxed{\;\vec{n}^\top\vec{r} - c = 0\;}, \qquad
-\boxed{\;\vec{n} = \myvec{0\\[4pt]-1\\[4pt]3}, \; c = 6\;}, \qquad
-\boxed{\;\mathrm{distance} = \tfrac{6}{\sqrt{10}}\; }.
+\text{Equation of Plane:} \quad 
+&\big(\vec{n}_1 - \tfrac{1}{2}\vec{n}_2\big)^\top \vec{r} = c_1 - \tfrac{1}{2}c_2 \\
+&\Longrightarrow \myvec{0 & -\tfrac12 & \tfrac32}\vec{r} = 3 \\[6pt]
+\text{Distance from $x$-axis:} \quad 
+&d = \frac{|3|}{\sqrt{10}/2} = \frac{6}{\sqrt{10}} = \frac{3\sqrt{10}}{5}
 \end{align}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\columnwidth]{figs/new_plane.png}
+    \includegraphics[width=0.9\columnwidth]{figs/plane.png}
     \caption{}
     \label{fig:placeholder}
 \end{figure}

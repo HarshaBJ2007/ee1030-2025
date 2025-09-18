@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.9)  18 SEP 2025 00:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.9)  18 SEP 2025 17:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1119,35 +1119,39 @@ No file main.nav.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 92.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 95.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 92.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 95.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 92.
+ut line 95.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 92.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 95.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 92.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 95.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 92.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 95.
 
 [2
 
-] [3
+]
+
+Package hyperref Warning: Ignoring empty anchor on input line 123.
+
+[3
 
 ] [4
 
@@ -1155,31 +1159,25 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
 
 ] [6
 
-]
-Overfull \vbox (13.56358pt too high) detected at line 207
- []
-
-[7
-
-] [8
+] [7
 
 ]
-<figs/new_plane.png, id=70, 650.43pt x 505.89pt>
-File: figs/new_plane.png Graphic file (type png)
-<use figs/new_plane.png>
-Package pdftex.def Info: figs/new_plane.png  used on input line 244.
-(pdftex.def)             Requested size: 308.06367pt x 239.61322pt.
+<figs/plane.png, id=64, 578.16pt x 505.89pt>
+File: figs/plane.png Graphic file (type png)
+<use figs/plane.png>
+Package pdftex.def Info: figs/plane.png  used on input line 215.
+(pdftex.def)             Requested size: 239.60567pt x 209.65482pt.
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 244.
+Package hyperref Warning: Ignoring empty anchor on input line 215.
 
 
-Overfull \vbox (37.00673pt too high) detected at line 244
+Overfull \vbox (7.04832pt too high) detected at line 215
  []
 
-[9
+[8
 
- <./figs/new_plane.png>]
+ <./figs/plane.png>]
 \openout4 = `main.vrb'.
 
  (./main.vrb
@@ -1193,25 +1191,40 @@ LaTeX Font Warning: Font shape `OML/cmss/m/n' undefined
 (Font)              for symbol `textless' on input line 3.
 
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-5.
+7.
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Trying to load font information for OMS+cmss on input line 
-8.
-LaTeX Font Info:    No file OMScmss.fd. on input line 8.
+7.
+LaTeX Font Info:    No file OMScmss.fd. on input line 7.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 8.
+(Font)              for symbol `textbraceleft' on input line 7.
 
-) [10
+) [9
 
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [11
+ (./main.vrb)
+Overfull \vbox (9.39334pt too high) detected at line 258
+ []
+
+[10
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/it' undefined
+(Font)              using `OMS/cmss/m/n' instead
+(Font)              for symbol `textbar' on input line 3.
+
+) [11
 
 ]
 \openout4 = `main.vrb'.
@@ -1232,19 +1245,12 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 \openout4 = `main.vrb'.
 
  (./main.vrb)
-Overfull \vbox (9.39334pt too high) detected at line 375
- []
-
 [15
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb)
-Overfull \vbox (9.39334pt too high) detected at line 400
- []
-
-[16
+ (./main.vrb) [16
 
 ]
 \openout4 = `main.vrb'.
@@ -1259,65 +1265,23 @@ Overfull \vbox (9.39334pt too high) detected at line 400
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [19
+ (./main.vrb)
+[19
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb)
-[20
+ (./main.vrb) [20
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb)
-Overfull \vbox (9.39334pt too high) detected at line 509
- []
-
-[21
+ (./main.vrb) [21
 
 ]
 \openout4 = `main.vrb'.
 
  (./main.vrb) [22
-
-]
-\openout4 = `main.vrb'.
-
- (./main.vrb) [23
-
-]
-\openout4 = `main.vrb'.
-
- (./main.vrb)
-Overfull \vbox (9.39334pt too high) detected at line 570
- []
-
-[24
-
-]
-\openout4 = `main.vrb'.
-
- (./main.vrb) [25
-
-]
-\openout4 = `main.vrb'.
-
- (./main.vrb)
-Overfull \vbox (9.39334pt too high) detected at line 608
- []
-
-[26
-
-]
-\openout4 = `main.vrb'.
-
- (./main.vrb) [27
-
-]
-\openout4 = `main.vrb'.
-
- (./main.vrb) [28
 
 ]
 \tf@nav=\write6
@@ -1348,31 +1312,31 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  CDB7BC6D8086CD4B45637DF47D524B6D;617.
+(rerunfilecheck)             After:  2CB5A24C5EFE7F36A46ED6838AB72956;617.
  ) 
 Here is how much of TeX's memory you used:
- 27592 strings out of 474222
- 513688 string characters out of 5748734
- 2184975 words of memory out of 5000000
- 49213 multiletter control sequences out of 15000+600000
- 567307 words of font info for 68 fonts, out of 8000000 for 9000
+ 27320 strings out of 474222
+ 511087 string characters out of 5748734
+ 2128975 words of memory out of 5000000
+ 48962 multiletter control sequences out of 15000+600000
+ 568723 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,19n,131p,398b,1419s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,16n,131p,398b,1410s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb>
-Output written on main.pdf (28 pages, 220183 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1095.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb>
+Output written on main.pdf (22 pages, 261552 bytes).
 PDF statistics:
- 249 PDF objects out of 1000 (max. 8388607)
- 184 compressed objects within 2 object streams
- 62 named destinations out of 1000 (max. 500000)
+ 216 PDF objects out of 1000 (max. 8388607)
+ 157 compressed objects within 2 object streams
+ 50 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
