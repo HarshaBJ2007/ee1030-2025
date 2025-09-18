@@ -122,26 +122,41 @@ is
 \end{multicols}
 \end{enumerate}
 \end{frame}
-
-\begin{frame}{Theoretical Solution}
-$\brak{a}$ From the given matrix $\vec{A}$,we observe that the first column and the first row, apart from the diagonal element, are zero. This implies that the sub-space spanned by 
+\begin{frame}{Definition}
+$\brak{a}$ Eigenvectors $\vec{v}$ for any square matrix $\vec{A}$ is defined as 
 \begin{align}
-    \vec{e_1}=\myvec{1&&0&&0}^{\top}
+    \vec{A}\vec{v}=\lambda\vec{v}
 \end{align}
-is invariant under $\vec{A}$. Since,
-\begin{align}
-    \vec{A}\vec{e_1}=\myvec{3&&0&&0\\0&&6&&2\\0&&2&&6}\myvec{1\\0\\0}=\myvec{3\\0\\0}=3 \times \myvec{1\\0\\0}=3\vec{e_1}
-\end{align}
-Thus, $\vec{e_1}$ is the eigen-vector and the eigen value is $\lambda=3$.
+where $\lambda$ is a scalar and is called the eigen value of $\vec{A}$.
 \end{frame}
 
 \begin{frame}{Theoretical Solution}
-Now the matrix $\vec{A}$ decouples into reduces into $1 \times 1$ block with eigen-value 3 and a $2\times2$ block.\\
-The $2\times2$ block wil be,
+From the given matrix $\vec{A}$,we observe that the first column and the first row, apart from the diagonal element, are zero. This implies that the sub-space spanned by 
 \begin{align}
-    \vec{B}=\myvec{6&&2\\2&&6}
+    \vec{e_1}=\myvec{1&&0&&0}^{\top}
 \end{align}
-It can be expressed as,
+is invariant under $\vec{A}$. 
+Since,
+\begin{align}
+    \vec{A}\vec{e_1}=\myvec{3&&0&&0\\0&&6&&2\\0&&2&&6}\myvec{1\\0\\0}=\myvec{3\\0\\0}=3 \times \myvec{1\\0\\0}= \lambda \myvec{1\\0\\0}
+\end{align}
+Thus, $\vec{e_1}$ is the eigen-vector and the eigen value $\lambda=3$.
+\end{frame}
+
+\begin{frame}{Theoretical Solution}
+From matrix $\vec{A}$, we can also infer that the $\operatorname{span}\{e_2,e_3\}$ also is invariant. i.e, let $\vec{n}$ be a vector such that $\vec{n}=\myvec{0\\\alpha\\\beta}$ 
+\begin{align}
+    \implies \vec{A}\vec{n}=\myvec{0\\6\alpha+2\beta\\2\alpha+6\beta}
+\end{align}
+Here the $1^{st}$ element of the vector is also zero. Thus, the matrix $\vec{A}$ decouples into $1 \times 1$ block with eigen-value 3 and a $2\times2$ block.
+\begin{align}
+    \implies \vec{A}=\myvec{3&&0\\0&&\vec{B}}
+\end{align}
+where, $\vec{B}=\myvec{6&&2\\2&&6}$.
+\end{frame}
+
+\begin{frame}{Theoretical Solution}
+$\vec{B}$ can be expressed as,
 \begin{align}
     \vec{B}=\myvec{6&&2\\2&&6}=4\myvec{1&&0\\0&&1}+2\myvec{1&&1\\1&&1}=4\vec{I_2}+2\vec{u}\vec{u}^{\top}
 \end{align}
@@ -150,12 +165,10 @@ By observation,
 \begin{align}
     \vec{B}\vec{u}=4\vec{u}+2\brak{\vec{u}\vec{u}^{\top}}\vec{u}=4\vec{u}+2\vec{u}\brak{\vec{u}^{\top}\vec{u}}=8\vec{u} \label{eq:1}
 \end{align}
-
+From ~\eqref{eq:1}, we can say that the eigen-vector of $\vec{A}$ is $\myvec{0\\1\\1}$ and one of the eigen value is 8.
 \end{frame}
 
 \begin{frame}{Theoretical Solution}
-From ~\eqref{eq:1}, we can say that the eigen-vector of $\vec{A}$ is $\myvec{0\\1\\1}$ and one of the eigen value is 8.\\
-\\
 To compute the other eigen-vector $\vec{v}$ of $\vec{B}$, we can find the vector which is orthogonal to $\vec{u}$.
 \begin{align}
     \therefore \vec{v}^{\top}\vec{u}=\vec{u}^{\top}\vec{v}=0
@@ -167,14 +180,9 @@ To compute the other eigen-vector $\vec{v}$ of $\vec{B}$, we can find the vector
     \therefore\vec{B}\vec{v}=4\vec{v}+\brak{\vec{u}\vec{u}^{\top}}\vec{v}=4\vec{v}+\vec{u}\brak{\vec{u}^{\top}\vec{v}}=4\vec{v} \label{eq:2}
 \end{align}
 From ~\eqref{eq:2}, the eigen-vector of $\vec{A}$ is $\myvec{0\\1\\-1}$ and the eigen value is 4. 
-
-\end{frame}
-
-\begin{frame}{Theoretical Solution}
 \begin{align}
     \therefore \brak{\lambda_1,\lambda_2,\lambda_3}=\brak{8,4,3}
 \end{align}
-
 \end{frame}
 
 \begin{frame}{Theoretical Solution}
