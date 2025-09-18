@@ -23,10 +23,9 @@
 \usepackage{mathtools}
 \usepackage{gensymb}
 \usepackage{comment}
+\usepackage{float}
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{tkz-euclide} 
-\usepackage{listings}
-\usepackage{gvv}                                        
 \def\inputGnumericTable{}                                 
 \usepackage[latin1]{inputenc}                                
 \usepackage{color}                                            
@@ -55,81 +54,42 @@ text width=4em, text centered, rounded corners, minimum height=3em]
 	\maketitle
 	{\let\newpage\relax\maketitle}
 	
-	\renewcommand{\thefigure}{\theenumi}
-	\renewcommand{\thetable}{\theenumi}
 	\setlength{\intextsep}{10pt} % Space between text and floats
-	
-	
-	\numberwithin{equation}{enumi}
-	\numberwithin{figure}{enumi}
-	\renewcommand{\thetable}{\theenumi}
 
 \textbf{Question:}\\
 A circle has its center at $(4,4)$. If one end of a diameter is $(4,0)$, then find the coordinates of the other end.\\
 \solution\\
-According to the question,  
-Consider the coordinates as vectors:
+Let the position vectors for the center, the known end, and the unknown end of the diameter be $\vec{C}$, $\vec{B}$, and $\vec{A}$ respectively. Let the coordinates of the unknown end $\vec{A}$ be $(a,b)$.
 
-\begin{align*}
-A &= \myvec{x\\y}, \quad B = \myvec{4\\0}, \quad C = \myvec{4\\4}
-\end{align*}
+The given vectors are:
+\begin{align}
+\vec{A} = \myvec{a\\b}, \quad \vec{B} = \myvec{4\\0}, \quad \vec{C} = \myvec{4\\4}
+\end{align}
 
-The midpoint of the diameter is the center. Hence,
-\begin{align*}
-\frac{A+B}{2} &= C
-\end{align*}
+The center of the circle is the midpoint of the diameter. Therefore, the center vector is the average of the endpoint vectors.
+\begin{align}
+\vec{C} = \frac{\vec{A}+\vec{B}}{2}
+\end{align}
 
-Multiplying both sides by $2$,
-\begin{align*}
-A + B &= 2C
-\end{align*}
+To find the unknown vector $\vec{A}$, we rearrange the equation:
+\begin{align}
+2\vec{C} &= \vec{A} + \vec{B} \\
+\vec{A} &= 2\vec{C} - \vec{B}
+\end{align}
 
-Substituting,
-\begin{align*}
-\myvec{x\\y} + \myvec{4\\0} &= 2\myvec{4\\4}
-\end{align*}
-
-Simplifying,
-\begin{align*}
-\myvec{x\\y} &= 2\myvec{4\\4} - \myvec{4\\0} \\
+Substituting the given vector values:
+\begin{align}
+\myvec{a\\b} &= 2\myvec{4\\4} - \myvec{4\\0} \nonumber \\
 &= \myvec{8\\8} - \myvec{4\\0} \\
 &= \myvec{4\\8}
-\end{align*}
+\end{align}
 
-Now writing as a linear system,
-\begin{align*}
-\myvec{1 & 0\\0 & 1}\myvec{x\\y} &= \myvec{4\\8}
-\end{align*}
-
-The augmented matrix is,
-\begin{align*}
-\myvec{1 & 0 & 4\\0 & 1 & 8}
-\end{align*}
-
-Row operations give the same matrix :
-\begin{align*}
-\myvec{1 & 0 & 4\\0 & 1 & 8}
-\end{align*}
-
-Thus,
-\begin{align*}
-\operatorname{rank}\myvec{1 & 0\\0 & 1} 
-&= \operatorname{rank}\myvec{1 & 0 & 4\\0 & 1 & 8} = 2
-\end{align*}
-
-So the unique solution is
-\begin{align*}
-\myvec{x\\y} &= \myvec{4\\8}
-\end{align*}
-
-\begin{align*}
-\therefore \text{The other end of the diameter is }(4,8).
-\end{align*}
+\[ \therefore \text{The other end of the diameter is }(4,8). \]
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{figs/Figure_1.png}
-    \label{figure_1}
+    \label{fig:circle}
 \end{figure}
 
 \end{document}
