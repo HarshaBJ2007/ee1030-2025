@@ -41,7 +41,7 @@
 \bibliographystyle{IEEEtran}
 \vspace{3cm}
 
-\title{4.3.50}
+\title{4.11.37}
 \author{EE25BTECH11060 - V.Namaswi}
 % \maketitle
 % \newpage
@@ -50,77 +50,77 @@
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
 \setlength{\intextsep}{10pt} % Space between text and floats
-\textbf{Question}\\ Find the equation of the lines which makes intercepts -3 and 2 on the x and y axes respectively.\\
+\textbf{Question}\\Show that the lines $\frac{x-1}{3}=\frac{y-1}{-1}=\frac{z+1}{0}$  and $\frac{x+4}{2}=\frac{y}{0}=\frac{z+1}{3}$ intersect.Find their point of intersection.\\
 \textbf{Solution}\\
-Given that line passes through points $\brak{-3,0}$ and $\brak{0,2}$ \\
-Let
+Let,
+\begin{align}
+\frac{x-1}{3}=\frac{y-1}{-1}=\frac{z+1}{0}=\lambda\\
+\frac{x+4}{2}=\frac{y}{0}=\frac{z+1}{3}=\mu
+\end{align}
+ To check point of intersection,
+ \begin{align}
+     \begin{pmatrix}
+         1 \\ 1 \\ -1 
+     \end{pmatrix}+\lambda \begin{pmatrix}
+         3 \\ -1 \\ 0
+     \end{pmatrix}=\begin{pmatrix}
+         -4 \\ 0 \\ -1 
+     \end{pmatrix}+ \mu \begin{pmatrix}
+         2 \\ 0 \\ 3
+     \end{pmatrix}\\
+     \implies \begin{pmatrix}
+         3 & -2 \\ -1 & 0 \\ 0 & -3 
+     \end{pmatrix}\begin{pmatrix}
+         \lambda \\ \mu
+     \end{pmatrix}=\begin{pmatrix}
+         -5 \\ -1 \\ 0
+     \end{pmatrix}\\
+ \end{align}
+ Using gaussian elimination\\
+ Argumented matrix\\
+ \begin{align}
+     \begin{bmatrix}
+         3 & -2 &  | & -5 \\
+         -1 & 0  & | & -1\\
+         0 & -3 & | & 0 
+     \end{bmatrix}
+ \end{align}
+ Apply the row operation \( R_2 \to 3R_2 + R_1 \):
+\begin{align}
+\begin{bmatrix}
+3 & -2 & | & -5\\
+0 & -2 & | & -8\\
+0 & -3 & | & 0
+\end{bmatrix}
+\end{align}
+
+Divide the second row by \(-2\):
+\begin{align}
+\begin{bmatrix}
+3 & -2 & | & -5\\
+0 & 1  & | & 4\\
+0 & -3 & | & 0
+\end{bmatrix}
+\end{align}
+
+Now eliminate using \(R_2\):  
 \[
-\begin{array}{|c|c|}
-\hline
-\text{Vector} & coordinate \\ \hline
-\Vec{A} & (-3, 0) \\ \hline
-\Vec{B} & (0, 2) \\ \hline
-\end{array}
+R_1 \to R_1 + 2R_2, 
+\quad R_3 \to R_3 + 3R_2
 \]
 
-As equation of line is given by 
-\begin{align}
-    \vec{n}^\top \vec{x}=1
-\end{align}
- So, for $\vec{A}$ 
- \begin{align}
- \vec{n}^\top\begin{pmatrix}
-     -3  \\ 0
- \end{pmatrix}=1
-  \end{align}
-  for $\vec{B}$
- \begin{align}
-  \vec{n}^\top\begin{pmatrix}
-     0  \\  2
- \end{pmatrix}=1\\
- \end{align}
- From 2 and 3\\
- \begin{align}
- \begin{pmatrix}
-     -3 & 0 \\
-     0 & 2 
- \end{pmatrix} \vec{n}=\begin{pmatrix}
-     1 \\ 1
- \end{pmatrix}
- \end{align}
-
-In augmented matrix form\\
 \begin{align}
 \begin{bmatrix}
--3 & 0 & \big| & 1 \\
-0 & 2 & \big| & 1
+3 & 0 & | & 3\\
+0 & 1 & | & 4\\
+0 & 0 & | & 12
 \end{bmatrix}
 \end{align}
-Divide Row 1 by 3
-\begin{align}
-\begin{bmatrix}
--1 & 0 & \big| & \frac{1}{3}\\
-0 &  2  & \big| & 1
-\end{bmatrix}
-\end{align}
-Divide Row 2 by 2
-\begin{align}
-\begin{bmatrix}
-  -1 & 0 & \big| & \frac{1}{3}\\
-  0  &  1 & \big| & \frac{1}{2}
-\end{bmatrix}\\
- \vec{n}=\begin{pmatrix}
-     \frac{-1}{3}\\ \frac{1}{2}
- \end{pmatrix}
-\end{align}
-So From 1 equation of line is
-\begin{align}
-\begin{pmatrix}
-    \frac{-1}{3} & \frac{1}{2}
-\end{pmatrix}^\top \vec{x}=1
-\end{align}
+ The last row gives \(0 = 12\), which is a contradiction.  
+Hence, the system is inconsistent and has \textbf{no solution}.  
+Therefore, the two lines are skew and do not intersect.
 \begin{align}
 \centering
-\includegraphics[width=\columnwidth, height=0.8\textheight, keepaspectratio]{figs/Figure_6.png}       
+\includegraphics[width=\columnwidth, height=0.8\textheight, keepaspectratio]{figs/Figure_8.png}       
 \end{align}
 \end{document}

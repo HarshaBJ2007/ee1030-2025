@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.15)  17 SEP 2025 04:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.15)  17 SEP 2025 04:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1704,120 +1704,136 @@ Package hyperref Warning: Option `pdfauthor' has already been used,
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
-dvips/lm/lm-rm.enc}] [2
-
-]
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 9
-5.
+dvips/lm/lm-rm.enc}]
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 7
+9.
  (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-95.
+79.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-95.
+79.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 95.
+(Font)              <10.95> on input line 79.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 95.
+(Font)              <8> on input line 79.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 95.
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 9
-5.
+(Font)              <6> on input line 79.
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 7
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 9
-5.
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 7
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for OT1+txr on input line 9
-5.
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 7
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 9
-5.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 7
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 9
-5.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 7
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 95.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 79.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 95.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 79.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 95.
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 95.
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 95.
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 95.
- [3
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 79.
+ [2
 
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/
-dvips/lm/lm-mathit.enc}] [4
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}] [3
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}] [4
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}] [5
 
-]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.151 \end{frame}
-                 
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.151 \end{frame}
-                 
-? 
+] [6
 
-! LaTeX Error: \mathbf allowed only in math mode.
+]
+\openout4 = `main.vrb'.
+
+
+(./main.vrb
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
+2.
+ (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+
+! LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC»).
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.151 \end{frame}
-                 
+l.6     // 3Î» 
+               - 2Î¼ = -5
 ? 
-[6
 
-]
-\openout4 = `main.vrb'.
+! LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC¼).
 
- (./main.vrb
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-2.
- (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
-File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)) [7
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6     // 3Î» - 2Î¼ 
+                     = -5
+? 
+
+! LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC»).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7     // -Î» 
+                    = -1
+? 
+
+! LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC¼).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8     // -3Î¼ 
+                    = 0
+? 
+) [7
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [8
+ (./main.vrb)
+Overfull \vbox (13.72923pt too high) detected at line 196
+ []
+
+[8
 
 ]
 \openout4 = `main.vrb'.
@@ -1829,64 +1845,24 @@ File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
  (./main.vrb
 
-! LaTeX Error: Invalid UTF-8 byte sequence (â\lst@EC†\lst@EC’).
+! LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC»).
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.14 # X-intercept: set y = 0 â†’ 
-                                  -2x = 6 â†’ x = -3 â†’ A = (-3, 0)
+l.9 # Line L1: (x,y,z) = (1,1,-1) + Î»(
+                                       3,-1,0)
 ? 
 
-! LaTeX Error: Invalid UTF-8 byte sequence (â\lst@EC†\lst@EC’).
+! LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC¼).
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.14 # X-intercept: set y = 0 â†’ -2x = 6 â†’ 
-                                              x = -3 â†’ A = (-3, 0)
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (â\lst@EC†\lst@EC’).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.14 ...ept: set y = 0 â†’ -2x = 6 â†’ x = -3 â†’ 
-                                                  A = (-3, 0)
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (â\lst@EC†\lst@EC’).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.15 # Y-intercept: set x = 0 â†’ 
-                                  3y = 6 â†’ y = 2 â†’ B = (0, 2)
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (â\lst@EC†\lst@EC’).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.15 # Y-intercept: set x = 0 â†’ 3y = 6 â†’ 
-                                             y = 2 â†’ B = (0, 2)
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (â\lst@EC†\lst@EC’).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.15 ...rcept: set x = 0 â†’ 3y = 6 â†’ y = 2 â†’ 
-                                                  B = (0, 2)
+l.14 # Line L2: (x,y,z) = (-4,0,-1) + Î¼(
+                                         2,0,3)
 ? 
 ) [10
 
@@ -1895,10 +1871,31 @@ l.15 ...rcept: set x = 0 â†’ 3y = 6 â†’ y = 2 â†’
 
  (./main.vrb
 LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-4.
+5.
  (/usr/share/texmf/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)) [11
+)
+
+! LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC»).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...ot(x1, y1, z1, label="Line L1: (1,1,-1)+Î»(
+                                                  3,-1,0)", color='blue')
+? 
+
+! LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC¼).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 ...t(x2, y2, z2, label="Line L2: (-4,0,-1)+Î¼(
+                                                  2,0,3)", color='red')
+? 
+) [11
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}]
 \openout4 = `main.vrb'.
@@ -1908,23 +1905,18 @@ File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [13
+
+(./main.vrb) [13
 
 ]
-\openout4 = `main.vrb'.
+<Figure_8.png, id=403, 578.16pt x 433.62pt>
+File: Figure_8.png Graphic file (type png)
+<use Figure_8.png>
+Package pdftex.def Info: Figure_8.png  used on input line 291.
+(pdftex.def)             Requested size: 277.84888pt x 208.38666pt.
+ [14
 
-
-(./main.vrb) [14
-
-]
-<Figure_6.png, id=430, 462.528pt x 346.896pt>
-File: Figure_6.png Graphic file (type png)
-<use Figure_6.png>
-Package pdftex.def Info: Figure_6.png  used on input line 299.
-(pdftex.def)             Requested size: 277.84358pt x 208.38268pt.
- [15
-
- <./Figure_6.png>]
+ <./Figure_8.png>]
 \tf@nav=\write8
 \openout8 = `main.nav'.
 
@@ -1950,24 +1942,25 @@ Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 57029 strings out of 474222
- 1357110 string characters out of 5748733
- 2415229 words of memory out of 5000000
- 78264 multiletter control sequences out of 15000+600000
- 599736 words of font info for 78 fonts, out of 8000000 for 9000
+ 56995 strings out of 474222
+ 1356486 string characters out of 5748733
+ 2371229 words of memory out of 5000000
+ 78234 multiletter control sequences out of 15000+600000
+ 594306 words of font info for 76 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 128i,19n,123p,1172b,1465s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,15n,123p,1172b,1463s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (15 pages, 200461 bytes).
+ic/lm/lmsso8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmtt10.pfb>
+Output written on main.pdf (14 pages, 258901 bytes).
 PDF statistics:
- 519 PDF objects out of 1000 (max. 8388607)
- 438 compressed objects within 5 object streams
- 31 named destinations out of 1000 (max. 500000)
+ 495 PDF objects out of 1000 (max. 8388607)
+ 415 compressed objects within 5 object streams
+ 29 named destinations out of 1000 (max. 500000)
  84 words of extra memory for PDF output out of 10000 (max. 10000000)
 
