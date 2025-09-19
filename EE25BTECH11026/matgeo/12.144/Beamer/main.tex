@@ -171,34 +171,65 @@ As we could observe that matrix $\vec{A}$ has zeroes along the first row and fir
      \implies \myvec{3&&0&&0\\0&&6&&2\\0&&2&&6}\myvec{1\\0\\0}=3\myvec{1\\0\\0}
 \end{align}
 where $\lambda_3=3$.\\
-As the given matrix $\vec{A}$ is symmetric, we can say that the other eigenvectors would be orthogonal to $\myvec{1\\0\\0}$.
-
-\begin{align}
-    \therefore \myvec{3&&0&&0\\0&&6&&2\\0&&2&&6}\myvec{0\\1\\1}=8\myvec{0\\1\\1}
-\end{align}
-where $\lambda_1=8$.
 \end{frame}
 
 \begin{frame}{Theoretical Solution}
-Also,
+To obtain the other eigen vectors of $\vec{A}$, we can use the fact that the $\vec{A}$ is symmetric.\\
+\\
+Let us consider two eigen vectors of symmetric matrix $\vec{A}$ to be $\vec{u}$ and $\vec{w}$ such that,
+\begin{align}
+    \vec{A}\vec{u}=\lambda\vec{u} \quad and \quad \vec{A}\vec{w}=\mu \vec{w}
+\end{align}
+Consider the scalar $\vec{u}^{\top}\vec{A}\vec{w}$.Because $\vec{A}$ is symmetric,
+\begin{align}
+    \vec{u}^{\top}\vec{A}\vec{w}=\brak{\vec{A}\vec{u}}^{\top}\vec{w}=\brak{\lambda \vec{u}}^{\top}\vec{w}=\lambda\vec{u}^{\top}\vec{w}
+    \label{eq:2}
+\end{align}
+Similarly,
+\begin{align}
+    \vec{u}^{\top}\brak{\vec{A}\vec{w}}=\mu\vec{u}^{\top}\vec{w}
+    \label{eq:3}
+\end{align}
+
+\end{frame}
+
+\begin{frame}{Theoretical Solution}
+From ~\eqref{eq:2} and ~\eqref{eq:3},
+\begin{align}
+    \lambda\vec{u}^{\top}\vec{w}=\mu \vec{u}^{\top}\vec{w}
+    \implies \brak{\lambda-\mu}\vec{u}^{\top}\vec{w}=0
+\end{align}
+As $\lambda$ and $\mu$ are distinct,
+\begin{align}
+    \vec{u}^{\top}\vec{w}=0
+\end{align}
+$\implies$ $\vec{u}$ and $\vec{w}$ are orthogonal.\\
+Therefore, the other eigenvectors of $\vec{A}$ would be orthogonal to the eigen vector $\myvec{1\\0\\0}$.
+\end{frame}
+
+\begin{frame}{Theoretical Solution}
+\begin{align}
+    \therefore \myvec{3&&0&&0\\0&&6&&2\\0&&2&&6}\myvec{0\\1\\1}=8\myvec{0\\1\\1}
+\end{align}
+where $\lambda_1=8$.Also,
 \begin{align}
     \myvec{3&&0&&0\\0&&6&&2\\0&&2&&6}\myvec{0\\1\\-1}=4\myvec{0\\1\\-1}
 \end{align}
 where $\lambda_2=4$
+
 \begin{align}
     \therefore \text{The eigen-vectors of A:}\quad \myvec{1\\0\\0},\quad \myvec{0\\1\\-1},\quad \myvec{0\\1\\1}
 \end{align}
-
 \end{frame}
 
 \begin{frame}{Theoretical Solution}
 As we require unit eigen-vectors,
 
 \begin{align}
-    \therefore \vec{v_1}=\myvec{1\\0\\0} \qquad \vec{v_2}=\myvec{0\\\frac{1}{\sqrt{2}}\\\frac{1}{\sqrt{2}}} \qquad \vec{v_3}=\myvec{0\\\frac{1}{\sqrt{2}}\\\frac{-1}{\sqrt{2}}}
+    \implies \vec{v_1}=\myvec{1\\0\\0} \qquad \vec{v_2}=\myvec{0\\\frac{1}{\sqrt{2}}\\\frac{1}{\sqrt{2}}} \qquad \vec{v_3}=\myvec{0\\\frac{1}{\sqrt{2}}\\\frac{-1}{\sqrt{2}}}
 \end{align}
 \begin{align}
-    \vec{P}=\myvec{1&&0&&0\\0&&\frac{1}{\sqrt{2}}&&\frac{1}{\sqrt{2}}\\0&&\frac{1}{\sqrt{2}}&&\frac{-1}{\sqrt{2}}}
+    \therefore \vec{P}=\myvec{1&&0&&0\\0&&\frac{1}{\sqrt{2}}&&\frac{1}{\sqrt{2}}\\0&&\frac{1}{\sqrt{2}}&&\frac{-1}{\sqrt{2}}}
 \end{align}
 \end{frame}
 
