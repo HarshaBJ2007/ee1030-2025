@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.18)  18 SEP 2025 10:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.18)  19 SEP 2025 12:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1914,20 +1914,16 @@ dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}] [3
 
 ] [8
 
-] [9
-
-] [10
-
 ]
 \openout4 = `main.vrb'.
 
-
-(./main.vrb
+ (./main.vrb
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
 3.
- (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
+
+(/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)) [11
+)) [9
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}]
 \openout4 = `main.vrb'.
@@ -1935,13 +1931,13 @@ File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
  (./main.vrb
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
-)) [12
+)) [10
 
 ]
 \openout4 = `main.vrb'.
 
 
-(./main.vrb) [13
+(./main.vrb) [11
 
 ]
 \tf@nav=\write8
@@ -1962,8 +1958,8 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 57901 strings out of 474222
- 1372983 string characters out of 5748733
+ 57895 strings out of 474222
+ 1373106 string characters out of 5748733
  2325912 words of memory out of 5000000
  79120 multiletter control sequences out of 15000+600000
  600555 words of font info for 80 fonts, out of 8000000 for 9000
@@ -1974,14 +1970,13 @@ pe1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmsso8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb>
-
-Output written on main.pdf (13 pages, 202886 bytes).
+ic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/txfonts/txsya.pfb>
+Output written on main.pdf (11 pages, 179587 bytes).
 PDF statistics:
- 469 PDF objects out of 1000 (max. 8388607)
- 396 compressed objects within 4 object streams
- 30 named destinations out of 1000 (max. 500000)
+ 404 PDF objects out of 1000 (max. 8388607)
+ 337 compressed objects within 4 object streams
+ 24 named destinations out of 1000 (max. 500000)
  85 words of extra memory for PDF output out of 10000 (max. 10000000)
 
