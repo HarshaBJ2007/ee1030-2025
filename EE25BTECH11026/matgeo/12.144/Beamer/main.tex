@@ -166,25 +166,34 @@ where $\lambda$ is a scalar and is called the eigen value of $\vec{A}$.
 \end{frame}
 
 \begin{frame}{Theoretical Solution}
-For $\lambda_1=8$,
+As we could observe that matrix $\vec{A}$ has zeroes along the first row and first column except the the first pivot,
 \begin{align}
-    \myvec{3&&0&&0\\0&&6&&2\\0&&2&&6}\myvec{0\\1\\1}=8\myvec{0\\1\\1}
+     \implies \myvec{3&&0&&0\\0&&6&&2\\0&&2&&6}\myvec{1\\0\\0}=3\myvec{1\\0\\0}
 \end{align}
-For $\lambda_2=4$,
+where $\lambda_3=3$.\\
+As the given matrix $\vec{A}$ is symmetric, we can say that the other eigenvectors would be orthogonal to $\myvec{1\\0\\0}$.
+
 \begin{align}
-    \myvec{3&&0&&0\\0&&6&&2\\0&&2&&6}\myvec{0\\1\\-1}=4\myvec{0\\1\\-1}
+    \therefore \myvec{3&&0&&0\\0&&6&&2\\0&&2&&6}\myvec{0\\1\\1}=8\myvec{0\\1\\1}
 \end{align}
-For $\lambda_3=3$,
-\begin{align}
-     \myvec{3&&0&&0\\0&&6&&2\\0&&2&&6}\myvec{1\\0\\0}=3\myvec{1\\0\\0}
-\end{align}
+where $\lambda_1=8$.
 \end{frame}
 
 \begin{frame}{Theoretical Solution}
+Also,
+\begin{align}
+    \myvec{3&&0&&0\\0&&6&&2\\0&&2&&6}\myvec{0\\1\\-1}=4\myvec{0\\1\\-1}
+\end{align}
+where $\lambda_2=4$
 \begin{align}
     \therefore \text{The eigen-vectors of A:}\quad \myvec{1\\0\\0},\quad \myvec{0\\1\\-1},\quad \myvec{0\\1\\1}
 \end{align}
+
+\end{frame}
+
+\begin{frame}{Theoretical Solution}
 As we require unit eigen-vectors,
+
 \begin{align}
     \therefore \vec{v_1}=\myvec{1\\0\\0} \qquad \vec{v_2}=\myvec{0\\\frac{1}{\sqrt{2}}\\\frac{1}{\sqrt{2}}} \qquad \vec{v_3}=\myvec{0\\\frac{1}{\sqrt{2}}\\\frac{-1}{\sqrt{2}}}
 \end{align}
