@@ -1,9 +1,10 @@
-\contentsline {section}{\numberline {1}Objective}{1}{section.1}%
-\contentsline {section}{\numberline {2}Training Data}{1}{section.2}%
-\contentsline {section}{\numberline {3}Theory}{2}{section.3}%
-\contentsline {section}{\numberline {4}Linear Regression Model}{2}{section.4}%
-\contentsline {section}{\numberline {5}Solution}{2}{section.5}%
-\contentsline {section}{\numberline {6}Validation}{2}{section.6}%
-\contentsline {section}{\numberline {7}Observation}{2}{section.7}%
-\contentsline {section}{\numberline {8}Circuit Diagram}{3}{section.8}%
-\contentsline {section}{\numberline {9}Conclusion}{3}{section.9}%
+\contentsline {section}{\numberline {I}\textbf {Objective}}{3}{section.1}%
+\contentsline {section}{\numberline {II}\textbf {Training Data}}{3}{section.2}%
+\contentsline {section}{\numberline {III}\textbf {Theory}}{4}{section.3}%
+\contentsline {section}{\numberline {IV}\textbf {Linear Regression Model}}{4}{section.4}%
+\contentsline {section}{\numberline {V}\textbf {Solution}}{4}{section.5}%
+\contentsline {section}{\numberline {VI}\textbf {Validation}}{5}{section.6}%
+\contentsline {section}{\numberline {VII}\textbf {Conceptual logic implemented in the code}}{5}{section.7}%
+\contentsline {section}{\numberline {VIII}\textbf {Observation}}{5}{section.8}%
+\contentsline {section}{\numberline {IX}\textbf {Circuit Diagram}}{6}{section.9}%
+\contentsline {section}{\numberline {X}\textbf {Conclusion}}{6}{section.10}%

@@ -1,65 +1,38 @@
-\documentclass[journal,12pt,twocolumn]{IEEEtran}
-\usepackage{caption}
-\captionsetup{font=small,labelfont=bf}
-\usepackage{setspace}
-\usepackage{gensymb}
-\singlespacing
-\usepackage[cmex10]{amsmath}
-\usepackage{amsthm}
-\usepackage{mathrsfs}
-\usepackage{txfonts}
-\usepackage{stfloats}
-\usepackage{graphicx}
-\usepackage{float}   
-\usepackage{bm}
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
 \usepackage{cite}
-\usepackage{cases}
-\usepackage{subfig}
-\usepackage{longtable}
-\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
 \usepackage{enumitem}
 \usepackage{mathtools}
-\usepackage{tikz}
-\usepackage{circuitikz}
-\usepackage{verbatim}
+\usepackage{gensymb}
+\usepackage{comment}
 \usepackage[breaklinks=true]{hyperref}
-\usepackage{tkz-euclide} % loads  TikZ and tkz-base
+\usepackage{tkz-euclide} 
 \usepackage{listings}
-\usepackage{color}    
-\usepackage{array}    
-\usepackage{longtable}
-\usepackage{calc}     
-\usepackage{multirow} 
-\usepackage{hhline}   
-\usepackage{ifthen}   
-\usepackage{lscape}     
-\usepackage{chngcntr}
-\DeclareMathOperator*{\Res}{Res}
-\renewcommand\thesection{\arabic{section}}
-\renewcommand\thesubsection{\thesection.\arabic{subsection}}
-\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}   
+\usepackage{multicol}
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{circuitikz}
 
-\renewcommand\thesectiondis{\arabic{section}}
-\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
-\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
-\renewcommand\thetable{\arabic{table}}
-% correct bad hyphenation here
-\hyphenation{op-tical net-works semi-conduc-tor}
-\def\inputGnumericTable{}                                 %%
-
-\lstset{
-%language=C,
-frame=single, 
-breaklines=true,
-columns=fullflexible
-}
-%\lstset{
-%language=tex,
-%frame=single, 
-%breaklines=true
-%}
-
-\begin{document}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{problem}{Problem}
 \newtheorem{proposition}{Proposition}[section]
@@ -68,56 +41,27 @@ columns=fullflexible
 \newtheorem{example}{Example}[section]
 \newtheorem{definition}[problem]{Definition}
 \newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\nCr}[2]{\,^{#1}C_{#2}}
 \newcommand{\EEQA}{\end{eqnarray}}
-\newcommand{\define}{\stackrel{\triangle}{=}}
-\bibliographystyle{IEEEtran}
-\providecommand{\mbf}{\mathbf}
-\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
-\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
-\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
-\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
-\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
-\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
-\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
-\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
-\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
-\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
-\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
-\theoremstyle{remark}
-\newtheorem{rem}{Remark}
-\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
-\providecommand{\abs}[1]{\left\vert#1\right\vert}
-\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
-\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
-\providecommand{\mtx}[1]{\mathbf{#1}}
-\providecommand{\mean}[1]{E\left[ #1 \right]}
-\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
-\providecommand{\system}[1]{\overset{\mathcal{#1}}{ \longleftrightarrow}}
-\newcommand{\solution}{\noindent \textbf{Solution: }}
-\newcommand{\cosec}{\,\text{cosec}\,}
-\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
-\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
-\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
-\renewcommand{\vec}[1]{\boldsymbol{\mathbf{#1}}}
-\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
-     \def\rightbox#1{\makebox[0in][r]{#1}}
-     \def\centbox#1{\makebox[0in]{#1}}
-     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
-     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
 
+\begin{document}
 \vspace{3cm}
 \title{DIGITAL THERMOMETER USING PT-100}
 \author{Harsha B J and Bhargav K}
 \maketitle
+
+\newpage
 \tableofcontents
+
+\newpage
 \bigskip
 
-\section{Objective}
-The objective of this project is to design and implement a digital thermometer that measures the temperature using a PT-100 Resistance Temperature Detector (RTD), processes the signal through an Arduino microcontroller, and displays the temperature on a 16×2 LCD. In this experiment, the relationship between the voltage across
+\section{\textbf{Objective}}
+The objective of this project is to design and implement a digital thermometer that measures the temperature using a PT-100 Resistance Temperature Detector (RTD), processes the signal through an Arduino microcontroller, and displays the temperature on a 16$\times$2 LCD. In this experiment, the relationship between the voltage across
 the PT-100 and the temperature is determined using linear regression (least squares
 method).
 
-\section{Training Data}
+\section{\textbf{Training Data}}
 The training data gathered by the PT-100 to train the Arduino is shown in Table
 \ref{tab:train}.
 
@@ -128,20 +72,18 @@ The training data gathered by the PT-100 to train the Arduino is shown in Table
     \label{tab:train}
 \end{table}
 
-The C++ source \texttt{codes/data.cpp} was used along with \textit{platformio}
-to drive the Arduino.
+The C++ source \texttt{codes/data.cpp} was used along with \textit{platformio} to drive the Arduino.
 
 The approximation is shown in Fig. \ref{fig:train}.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\columnwidth]{figs/train.png}
-    \caption{Training the model.}
+    \includegraphics[width=0.6\columnwidth]{figs/temp_vs_voltage/train.png}
     \label{fig:train}
 \end{figure}
 
 \vspace{2cm}
 
-\section{Theory}
+\section{\textbf{Theory}}
 The PT-100 sensor changes resistance with temperature. Its nominal resistance is 100 $\ohm$
 at 0 $\degree$C, and the resistance increases approximately linearly with temperature:
 \begin{align}
@@ -150,11 +92,8 @@ R_T = R_o(1 + \alpha T)
 where $\alpha$ = 0.00385 $\degree C^{-1}$. When placed in a Wheatstone bridge circuit, the resistance variation produces a corresponding voltage change, which can be measured and used to infer the temperature.
 
 
-\section{Linear Regression Model}
-To obtain an empirical model relating the measured voltage V to temperature T, we
-collect calibration data by measuring both quantities over a range of known temperatures.
-Let the measured data points be ($T_i$
-, $V_i$), i = 1, 2,. . , n. We assume a quadratic model for the voltage-temperature relationship
+\section{\textbf{Linear Regression Model}}
+To obtain an empirical model relating the measured voltage V to temperature T, we collect calibration data by measuring both quantities over a range of known temperatures. Let the measured data points be ($T_i$ , $V_i$), i = 1, 2,. . , n. We assume a quadratic model for the voltage-temperature relationship
 \begin{align}
     V(T) &= n_0+n_1T+n_2T^2 \\
 \end{align}
@@ -169,29 +108,30 @@ where
 
 
 
-\section{Solution}
-We approximate $\vec{n^T} = \myvec{n_0 & n_1 & n_2}$ using the least squares method. 
-Using the pseudo-inverse method, the solution to \eqref{eq:model} 
-is
+\section{\textbf{Solution}}
+We approximate $\vec{n^T} = \myvec{n_0 & n_1 & n_2}$ using the least squares method. Using the pseudo-inverse method, the solution to \eqref{eq:model} is
 \begin{align}
     \vec{n} = \brak{\vec{XX}^\top}^{-1}\vec{X}\vec{C}
 \end{align}
 The Python code \texttt{codes/main.py} solves for $\vec{n}$.
-
 The calculated value of $\vec{n}$ is
 \begin{align}
     \vec{n} = \myvec{2.7451\\3.5566\times10^{-3}\\-5.0234\times10^{-8}}
-    \label{eq:opt-theta}
+    \label{eq:opt-theta-1}
 \end{align}
-
-To obtain temperature as a function of measured voltage (for Arduino implementation),
-we rearrange or numerically invert the above relation:
+To obtain temperature as a function of measured voltage (for Arduino implementation), we rearrange or numerically invert the above relation:
 \begin{align}
 T(V) = a_0 + a_1V + a_2V^2
 \end{align}
 The coefficients $a_i$ can again be found by applying the least squares method to the ($V_i$, $T_i$)
-data
-\section{Validation}
+data, which yields
+\begin{align}
+    \vec{n} = \myvec{-996.9724\\435.5577\\-26.4382}
+    \label{eq:opt-theta-2}
+\end{align}
+
+
+\section{\textbf{Validation}}
 The validation data set is shown in Table \ref{tab:valid}. The results of the
 validation are shown in Fig. \ref{fig:valid}.
 \begin{table}[H]
@@ -202,12 +142,16 @@ validation are shown in Fig. \ref{fig:valid}.
 \end{table}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\columnwidth]{figs/valid.png}
-    \caption{Validating the model.}
+    \includegraphics[width=0.6\columnwidth]{figs/temp_vs_voltage/valid.png}
     \label{fig:valid}
 \end{figure}
 
-\section{Observation}
+\section{\textbf{Conceptual logic implemented in the code}}
+The provided program implements a quadratic regression model to establish the relationship between temperature and output voltage. It begins by loading the training data consisting of temperature (in $\degree$C) and voltage (in V) readings. A design matrix is then constructed using three terms: a constant, the temperature, and the square of the temperature. By applying the least squares method, the program determines the model coefficients that best fit the data. This fitted model is then used to generate predicted voltage values, which are plotted against the actual training data to visualize the accuracy of the fit.\\
+\\
+Subsequently, the program loads a separate validation dataset to evaluate the performance of the derived model on unseen data. The fitted curve and the actual validation data points are plotted together, allowing a clear comparison of the predicted and measured values. The resulting plots are saved for documentation, and the computed model parameters are printed for further analysis. In essence, the code effectively demonstrates the use of polynomial regression for sensor calibration and performance verification.
+
+\section{\textbf{Observation}}
 The observations made while conducting the experiment are as follows,
 \begin{enumerate}
     \item The readings of arduino had an offset of a few millivolts for every cycle of reading.
@@ -216,19 +160,17 @@ The observations made while conducting the experiment are as follows,
     \item the accuracy of the training model and validation data is close enough with a less validation.
 \end{enumerate}
 
-\begin{center}
-\section{Circuit Diagram}
+
+\section{\textbf{Circuit Diagram}}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1.5\columnwidth]{figs/circuit diagram.jpeg}
-    \caption{Digital thermometer usinng pt100}
+    \includegraphics[width=0.8\columnwidth]{figs/circuit diagram.jpeg}
     \label{fig:crtdiagram}
 \end{figure}
-\end{center}
 
 
 
-\section{Conclusion}
+\section{\textbf{Conclusion}}
 
 This project used Python for machine learning to calibrate the temperature sensor with linear regression. Arduino collected sensor data and showed real-time results. Python made the analysis easier and more accurate, while Arduino handled the hardware side. This simple combination of Python and Arduino creates a smart, affordable device by merging data science and embedded systems effectively.
 
