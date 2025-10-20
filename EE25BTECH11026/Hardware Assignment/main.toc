@@ -5,4 +5,5 @@
 \contentsline {section}{\numberline {5}Solution}{2}{section.5}%
 \contentsline {section}{\numberline {6}Validation}{2}{section.6}%
 \contentsline {section}{\numberline {7}Observation}{2}{section.7}%
-\contentsline {section}{\numberline {8}Conclusion}{3}{section.8}%
+\contentsline {section}{\numberline {8}Circuit Diagram}{3}{section.8}%
+\contentsline {section}{\numberline {9}Conclusion}{3}{section.9}%
