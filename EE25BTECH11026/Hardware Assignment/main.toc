@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Objective}{1}{section.1}%
+\contentsline {section}{\numberline {2}Training Data}{1}{section.2}%
+\contentsline {section}{\numberline {3}Theory}{2}{section.3}%
+\contentsline {section}{\numberline {4}Linear Regression Model}{2}{section.4}%
+\contentsline {section}{\numberline {5}Solution}{2}{section.5}%
+\contentsline {section}{\numberline {6}Validation}{2}{section.6}%
+\contentsline {section}{\numberline {7}Observation}{2}{section.7}%
+\contentsline {section}{\numberline {8}Conclusion}{3}{section.8}%
